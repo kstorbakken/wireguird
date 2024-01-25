@@ -9,7 +9,7 @@ import (
 	"github.com/ungerik/go-dry"
 )
 
-const FilePath = "./wireguird.settings"
+const FilePath = "/etc/wireguird.settings"
 
 type Settings struct {
 	MultipleTunnels bool

@@ -58,7 +58,7 @@ func createTray(application *gtk.Application) (*appindicator.Indicator, error) {
 	}
 
 	indicator := appindicator.New(application.GetApplicationID(), "wireguard_off", appindicator.CategoryApplicationStatus)
-	indicator.SetIconThemePath("/opt/wireguird/Icon")
+	indicator.SetIconThemePath("../share/wireguird/Icon")
 	indicator.SetTitle("Wireguird")
 	// indicator.SetLabel("Wireguird", "")
 	indicator.SetStatus(appindicator.StatusActive)

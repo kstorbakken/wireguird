@@ -6,8 +6,12 @@ if [ -e "$deb_file" ]; then
 fi
 
 usr_w_dir="./deb/usr/"
-if [ -e "$usr_w_dir" ]; then
-  rm -r "$usr_w_dir"
+if [ -e "$usr_w_dir"/bin ]; then
+  rm -r "$usr_w_dir"/bin
+fi
+
+if [ -e "$usr_w_dir"/share/wireguird ]; then
+  rm -r "$usr_w_dir"/share/wireguird
 fi
 
 mkdir -p "$usr_w_dir"/bin
